@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>سبد خرید</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="pascalCSS.css" rel="stylesheet" type="text/css">
+<link href="effect.css" rel="stylesheet" type="text/css">
+<link href="bootstrap4.css" rel="stylesheet" type="text/css">
+<link href="admincss.css" rel="stylesheet" type="text/css">
+<link href="effect.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#back-top").hide();
+    
+    $(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 500){
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        $('#back-top a').click(function(){
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            
+            return false;
+        });
+    });
+});
+</script>
+</head>
+
+<body style="direction: rtl">
+<div class="navbar navbar-expand-lg bg-dark text-light">
+  <button class="navbar-toggler" data-target="#menuList" data-toggle="collapse" style="border: 1px solid white;"> <i style="font-size:24px;color: white;" class="fa">&#xf0c9;</i> </button>
+  <div class="collapse navbar-collapse" id="menuList">
+    <ul class="navbar-nav">
+      <li class="nav-item"> <a href="#" class="nav-link linkMenu">خانه</a> </li>
+      <li class="nav-item"> <a href="index.html" class="nav-link linkMenu">بازگشت به صفحه اصلی</a> </li>
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle linkMenu" href="#" id="navbardrop" data-toggle="dropdown"> محصولات </a>
+        <div class="dropdown-menu text-right"> <a class="dropdown-item" href="#">مواد غذایی</a> <a class="dropdown-item" href="#">ظروف</a> </div>
+      </li>
+      <li class="nav-item"> <a href="#" class="nav-link linkMenu">تماس با ما</a> </li>
+      <li class="nav-item"> <a href="#" class="nav-link linkMenu">درباره ما</a> </li>
+      <li class="nav-item"> <a href="userLogin.html" class="nav-link linkMenu"> حساب کاربری</a> </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4" id="menu1"><div class="myclose">
+		<a href="javascript:void(0)" onClick="hideMenu()">
+			<i class="fa fa-close" style="font-size:24px;color: yellow;"></i>
+		</a>
+	</div>
+    <h4 style="text-align: center">حبوبات</h4>
+    <img src="download4.jpg"> <a>
+    <h5 style="text-align: center"><i class="fa fa-cart-arrow-down" style="font-size:24px;color: black;margin-top: 0px"></i>افزودن به سبد خرید</h5>
+    </a> </div>
+  <div class="col-4" id="menu2"><div class="myclose">
+		<a href="javascript:void(0)" onClick="hideMenu1()">
+			<i class="fa fa-close" style="font-size:24px;color: yellow;"></i>
+		</a>
+	</div>
+    <h4 style="text-align: center">تن ماهی</h4>
+    <img src="th.jpg"> <a>
+    <h5 style="text-align: center">افزودن به سبد خرید<i class="fa fa-cart-arrow-down" style="font-size:24px;color: black;margin-top: 0px"></i></h5>
+    </a> </div>
+  <div class="col-4" id="menu3">
+	  <div class="myclose">
+		<a href="javascript:void(0)" onClick="hideMenu2()">
+			<i class="fa fa-close" style="font-size:24px;color: yellow;"></i>
+		</a>
+	</div>
+    <h4 style="text-align: center">نخود</h4>
+    <img src="th1.jpg"> <a>
+	  
+    <h5  style="text-align: center"><i class="fa fa-cart-arrow-down" style="font-size:24px;color: black;margin-top: 0px"></i> افزودن به سبد خرید</h5>
+    </a> </div>
+</div>
+<div class="footer">
+  <div class="row"> </div>
+  <div class="col-1"></div>
+  <div class="col-md-12 footer" style="">
+    <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <h6 style="margin-bottom: 30px;">راهنمای خرید از سایت من</h6>
+        <ul style="text-align: right;list-style-type: none;padding-right: 150px;margin-bottom: 50px;">
+          <li> نحوه ثبت سفارش </li>
+          <li> رویه ارسال </li>
+          <li> تماس با ما </li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 style="margin-bottom: 30px;">خدمات مشتریان</h6>
+        <ul style="text-align: right;list-style-type: none;padding-right: 150px;margin-bottom: 50px;">
+          <li> نحوه ثبت سفارش </li>
+          <li> رویه ارسال </li>
+          <li> تماس با ما </li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <h6 style="margin-bottom: 30px;text-align: center;">دنبال چی میگردی ؟</h6>
+        <div>
+          <form method="post" action="">
+            <input type="text" name="" class="form-control" style="width: 70%;float:left; ">
+            <button type="submit" class="btn-primary btn-sm" style="padding: 8px;"> <i class="fa fa-search" style="font-size:18px;float:left;"></i> </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="display: block;" id="back-top"> <a href="#block"><span></span>&uarr; رفتن به بالای صفحه</a> </div>
+<script>
+	function hideMenu()
+	{
+		document.getElementById("menu1").style.right="-10000px";	
+	}
+	function hideMenu1()
+	{
+		document.getElementById("menu2").style.right="-10000px";	
+	}
+	function hideMenu2()
+	{
+		document.getElementById("menu3").style.right="-10000px";	
+	}
+	
+</script>
+</body>
+</html>

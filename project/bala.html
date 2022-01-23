@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>وبگو | رفتن به بالای صفحه با توابع جی کئوری</title>
+<!-- Webgoo.ir -->
+<style type="text/css">
+body{
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 12px;
+    direction: rtl;
+}
+a{
+    text-decoration:none;
+}
+.block{
+    display: block;
+    height: 1500px;
+    width: 80%;
+    color: #FFFFFF;
+    background-color: #119F9D;
+    border:1px solid #006738;
+    clear: both;
+    padding: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#back-top {
+    position: fixed;
+    bottom: 50px;
+    margin-left: -150px;
+}
+#back-top a {
+    width: 108px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #bbb;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover {
+    color: #000;
+}
+#back-top span {
+    width: 108px;
+    height: 108px;
+    display: block;
+    margin-bottom: 8px;
+    background: #ddd url(up-arrow.png) no-repeat center center;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#back-top a:hover span {
+    background-color: #777;
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#back-top").hide();
+    
+    $(function(){
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 500){
+                $('#back-top').fadeIn();
+            } else {
+                $('#back-top').fadeOut();
+            }
+        });
+
+        $('#back-top a').click(function(){
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            
+            return false;
+        });
+    });
+});
+</script>
+</head>
+<body>
+<noscript>جاوا اسکریپت در مرورگر شما غیر فعال است!</noscript>
+<div id="block" class="block">برای تست کد، به پائین صفحه اسکرول کنید!</div>
+<div style="display: block;" id="back-top">
+<a href="#block"><span></span>&uarr; رفتن به بالای صفحه</a>
+</div>
+<hr>
+در این روش در قسمت دستورات جی کئوری با استفاده از متد scrollTop مقدار اسکرول کاربر را محاسبه کرده و اگر از میزان تعیین شده بیشتر بود بلاک رفتن به بالا را با افکت محو و آشکارسازی (Fade) نرم نمایش می دهیم.
+</body>
+</html>
